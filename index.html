@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>OPOS Recipe Creator</title>
+  <meta name="description" content="A template to create OPOS recipe format">
+  <meta name="author" content="Ravi Surulikamu">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+  <form>
+      <h1> OPOS Recipe Creator</h1>
+      <div class="row" style="margin-top: 25%">
+          <div class="six columns">
+              <label for="nameInput">Name of the recipe</label>
+              <input class="u-full-width" type="text" placeholder="Biriyani" id="nameInput">
+          </div>
+          <div class="six columns">
+              <label for="pcInput">Pressure Cooker Size</label>
+              <select class="u-full-width" id="pcInput">
+                  <option value="Option 1">2L</option>
+                  <option value="Option 2">3L</option>
+                  <option value="Option 3">5L</option>
+              </select>
+          </div>
+      </div>
+
+      <h4> Prepare </h4>
+      <div class="row">
+          <div class="two columns">
+              <label for="prep1">Item 1</label>
+          </div>
+          <div class="ten columns">
+              <input class="u-full-width" type="text" placeholder="Curd, masala spice to a paste" id="prep1">
+          </div>
+      </div>
+      <div class="row">
+          <div class="two columns">
+              <label for="prep2">Item 2</label>
+          </div>
+          <div class="ten columns">
+              <input class="u-full-width" type="text" placeholder="Ground powders" id="prep2">
+          </div>
+      </div>
+
+      <h4> Layer </h4>
+      <div class="row">
+          <div class="two columns">
+              <label for="layer1">Layer 1</label>
+          </div>
+          <div class="ten columns">
+              <input class="u-full-width" type="text" placeholder="1tbsp water, 2tsp oil" id="layer1">
+          </div>
+      </div>
+      <div class="row">
+          <div class="two columns">
+              <label for="layer2">Layer 2</label>
+          </div>
+          <div class="ten columns">
+              <input class="u-full-width" type="text" placeholder="2tbsp water, 2tsp oil" id="layer2">
+          </div>
+      </div>
+      <div class="row">
+          <div class="two columns">
+              <label for="layer3">Layer 3</label>
+          </div>
+          <div class="ten columns">
+              <input class="u-full-width" type="text" placeholder="3tbsp water, 2tsp oil" id="layer3">
+          </div>
+      </div>
+      <div class="row">
+          <div class="two columns">
+              <label for="layer4">Layer 4</label>
+          </div>
+          <div class="ten columns">
+              <input class="u-full-width" type="text" placeholder="4tbsp water, 2tsp oil" id="layer4">
+          </div>
+      </div>
+
+      <h4> Heat </h4>
+      <div class="row">
+          <div class="four columns">
+              <label for="heat">Heat Level</label>
+              <select class="u-full-width" id="heat">
+                  <option value="high">High</option>
+                  <option value="medium">Medium</option>
+              </select>
+          </div>
+          <div class="four columns">
+              <label for="whistle">Whistles</label>
+              <input class="u-full-width" type="number" min="0" placeholder="2" id="whistle">
+          </div>
+          <div class="four columns">
+              <label for="time">Time (in mins)</label>
+              <input class="u-full-width" type="number" min="0" placeholder="6" id="time">
+          </div>
+      </div>
+      <label class="u-pull-right">
+          <input type="checkbox">
+          <span class="label-body">Release Pressure</span>
+      </label>
+
+      <h4> Mix </h4>
+      <div class="row">
+          <div class="two columns">
+              <label for="Mixin">Mix in</label>
+          </div>
+          <div class="ten columns">
+              <input class="u-full-width" type="text" placeholder="1tbsp shredded coconuts" id="mixin">
+          </div>
+      </div>
+      <label class="u-pull-right">
+          <input type="checkbox">
+          <span class="label-body">Cook in retained heat</span>
+      </label>
+
+      <label for="exampleMessage">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+      <label class="u-pull-right example-send-yourself-copy">
+          <input type="checkbox">
+          <span class="label-body">Send a copy to yourself</span>
+      </label>
+      <input class="button-primary" type="submit" value="Submit">
+  </form>
+  </div>
+
+  <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+  <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
